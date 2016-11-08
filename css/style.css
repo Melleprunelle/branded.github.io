@@ -1,0 +1,311 @@
+body {
+    background-image: url(../elements/BG-grain.png);
+    background-color: #FBF8EE;
+}
+
+.container-fluid {
+    width: 95%;
+    z-index: 0;
+}
+
+
+/* ____________________ NAV ____________________ */
+
+.navbar-inverse {
+    border-radius: 0;
+    background-color: transparent;
+    background-position: center;
+    height: 150px;
+    border: 0;
+}
+
+.navbar-header {}
+
+nav img {
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+}
+
+nav img:hover {}
+
+nav small {
+    margin-left: 20px;
+    font-size: 1em;
+    color: #666;
+    line-height: 35px;
+    font-family: "edmondsansregular";
+    cursor: default;
+}
+
+.navbar-header,
+.navbar-right {
+    margin-top: 4%;
+}
+
+.navbar-right {
+    float: none !important;
+}
+
+.firt-li {
+    margin-left: 80px;
+}
+
+.nav a {
+    color: #666 !important;
+    font-family: "edmondsansbold";
+    font-size: 1.2em;
+    margin-top: 6px;
+    padding-right: 40px !important;
+}
+
+.nav a:hover {
+    transition: 1s;
+    color: #90BFB7 !important;
+}
+
+.firt-li {
+    margin-left: 40px;
+}
+
+.logo {
+    width: 70px;
+    height: 125px;
+    background-color: #4a4447;
+    position: fixed;
+    margin-top: -75px;
+    z-index: 9999;
+}
+
+.logo img {
+    width: 40px;
+    margin-left: 17.5px;
+    margin-top: 60px;
+    -webkit-animation-name: rotation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: rotation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 5;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rotation {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg)}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg)}
+}
+
+/* ____________________ BIG IMG ____________________ */
+
+.big-img {
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+    -moz-box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+    box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+}
+
+.big-img img {
+    cursor: pointer;
+}
+
+
+/* ____________________ SMALL IMG ____________________ */
+
+.small-img {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.small-img div {
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+    -moz-box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+    box-shadow: 10px 10px 0px -5px rgba(214, 214, 214, 0.7);
+    width: 48%;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.small-img div:last-child {
+    margin-left: 3.6%;
+}
+
+
+/* ____________________ Partie texte big img ____________________ */
+
+.contenu {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: "edmondsansregular";
+    font-size: 1.4em;
+    color: #666;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+.contenu p {
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+.contenu strong {
+    border-bottom: 2px solid lightgrey;
+    cursor: pointer;
+}
+
+.contenu strong:hover {
+    border-bottom: 0px;
+    color: #90BFB7;
+    transition: 1s;
+}
+
+.contenu h4 {
+    font-family: "chunkfiveroman";
+    text-align: right;
+    font-size: 15px;
+    padding-right: 0px;
+    color: #4a4447;
+}
+
+.contenu small {
+    text-align: left;
+    margin-left: 10px;
+    font-family: "edmondsansregular";
+    font-size: 1em;
+}
+
+.contenu button {
+    font-family: "chunkfiveroman";
+    color: whitesmoke;
+    height: 55px;
+    border: 0;
+    background-color: #4a4447;
+    margin-top: 20px;
+    width: 230px;
+    float: right;
+}
+
+.contenu button:hover {
+    background-color: #90BFB7;
+    transition: 1s;
+}
+
+
+/* ____________________ Partie texte small img ____________________ */
+
+.small-text div {
+    font-family: "edmondsansregular";
+    color: #666;
+    text-align: justify;
+    margin-bottom: 75px;
+    width: 48%;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+.small-text div:last-child {
+    margin-left: 3.6%;
+}
+
+.small-text p {
+    font-size: 1.4em;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.small-text h4 {
+    font-family: "chunkfiveroman";
+    text-align: right;
+    padding-right: 0px;
+    font-size: 15px;
+    color: #4a4447;
+}
+
+.small-text small {
+    text-align: left;
+    margin-left: 10px;
+    font-family: "edmondsansregular";
+    font-size: .9em;
+}
+
+.small-text button {
+    font-family: "chunkfiveroman";
+    color: whitesmoke;
+    height: 55px;
+    border: 0;
+    background-color: #4a4447;
+    margin-top: 20px;
+    font-size: 1.5em;
+    width: 230px;
+    float: right;
+}
+
+.small-text button:hover {
+    background-color: #90BFB7;
+    transition: 1s;
+}
+
+#sold-out {
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+#sold-out:hover {
+    background-color: #4a4447;
+}
+
+#top-20 {
+    top: -20px;
+}
+
+
+/* ____________________ IMG PARALLAX ____________________ */
+
+.img-parallax {
+    background-image: url(../elements/paysage-parallax.jpg);
+    height: 600px;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ____________________ CONTACT ____________________ */
+
+.contact {
+   background-image: url(../elements/BG-grain-dark.png);
+    background-color: #222;
+    height: 380px;
+    background-size: 70%;
+    background-repeat: repeat;
+    background-position: center;
+    border-top: 20px solid white;
+    padding: 0px;
+}
+
+.img-news1 {
+    background-image: url(../elements/news1.png);
+    height: 100%;
+    width: 35%;/*
+    background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: 170% 150%;
+}
