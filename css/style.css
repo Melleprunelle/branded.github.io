@@ -8,6 +8,26 @@ body {
     z-index: 0;
 }
 
+strong {
+    border-bottom: 2px solid #60575c;
+    cursor: pointer;
+}
+
+strong:hover {
+    border-bottom: 0px;
+    color: #90BFB7;
+    transition: 1s;
+}
+
+p {
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "edmondsansregular";
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
 
 /* ____________________ NAV ____________________ */
 
@@ -24,7 +44,6 @@ body {
 nav img {
     float: left;
     width: 30%;
-    margin-left: 30px;
 }
 
 nav img:hover {}
@@ -32,7 +51,7 @@ nav img:hover {}
 nav small {
     margin-left: 20px;
     font-size: 1em;
-    color: #666;
+    color: #60575c;
     line-height: 35px;
     font-family: "edmondsansregular";
     cursor: default;
@@ -47,12 +66,8 @@ nav small {
     float: none !important;
 }
 
-.firt-li {
-    margin-left: 80px;
-}
-
 .nav a {
-    color: #666 !important;
+    color: #60575c !important;
     font-family: "edmondsansbold";
     font-size: 1.2em;
     margin-top: 6px;
@@ -65,13 +80,13 @@ nav small {
 }
 
 .firt-li {
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 .logo {
     width: 70px;
     height: 125px;
-    background-color: #4a4447;
+    background-color: #60575c;
     position: fixed;
     margin-top: -75px;
     z-index: 9999;
@@ -79,26 +94,44 @@ nav small {
 
 .logo img {
     width: 40px;
-    margin-left: 17.5px;
+    margin-left: 15px;
     margin-top: 60px;
-    -webkit-animation-name: rotation; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: rotation;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
     animation-name: rotation;
-    animation-duration: 1.5s;
-    animation-iteration-count: 5;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
 }
+
+.logo img:hover {
+}
+
 
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes rotation {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(180deg)}
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg)
+    }
 }
 
+
 /* Standard syntax */
+
 @keyframes example {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(180deg)}
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg)
+    }
 }
+
 
 /* ____________________ BIG IMG ____________________ */
 
@@ -147,29 +180,11 @@ nav small {
     margin-top: 50px;
     font-family: "edmondsansregular";
     font-size: 1.4em;
-    color: #666;
+    color: #60575c;
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 100px;
     text-align: justify;
-}
-
-.contenu p {
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: 30px;
-    font-size: 1.1em;
-}
-
-.contenu strong {
-    border-bottom: 2px solid lightgrey;
-    cursor: pointer;
-}
-
-.contenu strong:hover {
-    border-bottom: 0px;
-    color: #90BFB7;
-    transition: 1s;
 }
 
 .contenu h4 {
@@ -189,7 +204,7 @@ nav small {
 
 .contenu button {
     font-family: "chunkfiveroman";
-    color: whitesmoke;
+    color: white;
     height: 55px;
     border: 0;
     background-color: #4a4447;
@@ -208,7 +223,7 @@ nav small {
 
 .small-text div {
     font-family: "edmondsansregular";
-    color: #666;
+    color: #60575c;
     text-align: justify;
     margin-bottom: 75px;
     width: 48%;
@@ -247,7 +262,7 @@ nav small {
 
 .small-text button {
     font-family: "chunkfiveroman";
-    color: whitesmoke;
+    color: white;
     height: 55px;
     border: 0;
     background-color: #4a4447;
@@ -291,7 +306,7 @@ nav small {
 /* ____________________ CONTACT ____________________ */
 
 .contact {
-   background-image: url(../elements/BG-grain-dark.png);
+    background-image: url(../elements/BG-grain-dark.png);
     background-color: #222;
     height: 380px;
     background-size: 70%;
@@ -299,13 +314,142 @@ nav small {
     background-position: center;
     border-top: 20px solid white;
     padding: 0px;
+    color: white;
 }
 
 .img-news1 {
     background-image: url(../elements/news1.png);
     height: 100%;
-    width: 35%;/*
-    background-size: cover;*/
     background-repeat: no-repeat;
-    background-position: 170% 150%;
+    background-position: 170% 210%;
+}
+
+.img-news1 img {
+    margin-top: 20%;
+    margin-left: 35%;
+    -webkit-box-shadow: 10px 10px 0px -5px rgba(15, 15, 15, 0.7);
+    -moz-box-shadow: 10px 10px 0px -5px rgba(15, 15, 15, 0.7);
+    box-shadow: 10px 10px 0px -5px rgba(15, 15, 15, 0.7);
+}
+
+.contact p {
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "edmondsansregular";
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+form {
+    margin-left: 3%;
+}
+
+.contact h3 {
+    font-family: "chunkfiveroman";
+    font-size: 1.5em;
+    padding-right: 0px;
+    color: #;
+    padding-left: 0px;
+    padding-top: 7%;
+}
+
+.contact input {
+    height: 70px;
+    margin-top: 20px;
+    width: 35%;
+    border: 0;
+    margin-right: 20px;
+    outline: 0;
+    color: #4a4447;
+}
+
+.contact button {
+    font-family: "chunkfiveroman";
+    color: white;
+    height: 70px;
+    border: 0;
+    background-color: #4a4447;
+    margin-top: 20px;
+    font-size: 1.5em;
+    width: 175px;
+    float: right;
+}
+
+.contact button:hover {
+    background-color: #90BFB7;
+    transition: 1s;
+}
+
+
+/* ____________________ FOOTER ____________________ */
+
+footer {
+    height: 100vh;
+    background-image: url(../elements/footer.jpg);
+    background-position: top;
+    background-size: 165%;
+    image-rendering: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #60575c;
+}
+
+footer h3 {
+    font-family: "chunkfiveroman";
+    font-size: 2em;
+    max-width: 45%;
+    text-align: center;
+    line-height: 135%;
+}
+
+footer small {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+footer p {
+    max-width: 40%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "edmondsansregular";
+    margin-top: 30px;
+}
+
+footer i {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 12px 5px 0px 5px;
+    background-color: #60575c;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+
+footer i:hover {
+    background-color: #90bfb7;
+    transition: 1s;
+}
+
+.copyright {
+    font-size: 1.1em;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+footer p:last-child {
+    margin-top: 0px;
+    font-size: 1.2em;
+}
+
+footer strong:hover {
+    color: #60575c;
 }
